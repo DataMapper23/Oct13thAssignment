@@ -42,7 +42,43 @@ button:hover{
     background-color: darkgreen;
 }
 
+
+#grid_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap:10px;
+    
+}
+
+#red{
+    grid-column:1;
+    grid-row: 1;
+}
+
+#kakapo{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#lovebird{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#rate{
+    grid-column: 2; 
+    grid-row: 2;
+}
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
-   
+   #grid_container{
+    grid-template-columns:1fr;
+    grid-template-rows: auto auto auto auto;
+   }
+   #rate, #red, #kakapo, #lovebird{
+    grid-column: span 1;
+    grid-row: auto;
+   }
 }
