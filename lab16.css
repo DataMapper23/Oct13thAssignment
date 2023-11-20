@@ -28,3 +28,21 @@ h2{
     background-color: olivedrab;
     padding: 20px;
 }
+
+button{
+    padding:10px;
+    background-color: rgb(25, 58, 10);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+   
+}
