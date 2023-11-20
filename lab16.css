@@ -51,6 +51,7 @@ button:hover{
     
 }
 
+
 #red{
     grid-column:1;
     grid-row: 1;
@@ -71,6 +72,32 @@ button:hover{
     grid-row: 2;
 }
 
+
+ul{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    list-style: none;
+    font-family: fantasy;
+}
+
+li{
+    text-align: center;
+}
+
+thead th{
+    background-color:darkcyan;
+    color: white;
+    padding: 10px;
+}
+
+.num{
+    text-align: right;
+}
+
+
+
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
    #grid_container{
@@ -78,7 +105,11 @@ button:hover{
     grid-template-rows: auto auto auto auto;
    }
    #rate, #red, #kakapo, #lovebird{
-    grid-column: span 1;
+    grid-column: 1;
     grid-row: auto;
+   }
+
+   ul{
+    flex-direction: column;
    }
 }
